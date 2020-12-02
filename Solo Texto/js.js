@@ -33,7 +33,8 @@ ctx.fillStyle = "rgba("+hexToRgb(color).r+","+hexToRgb(color).g+","+hexToRgb(col
 ctx.drawImage(laImagen, 0, 0);
 // el texto para la marca de agua
 var texto = document.getElementById("TextoMarca").value;
-var tamanoTexto = 600; // empieza con algo grande, más grande de lo que sea necesario
+var tamano = document.getElementById("TextoTamano").value;
+var tamanoTexto = tamano; // empieza con algo grande, más grande de lo que sea necesario
 
 ctx.font = tamanoTexto + "px Arial";
 // mide la anchura del texto
@@ -50,10 +51,13 @@ while (anchuraTexto > canvas.width - 20) {
 
 
 var aux = laImagen.height-30
+var aux2 = laImagen.width-30
 document.getElementById("TextoPos").max=aux
+document.getElementById("TextoPos2").max=aux2
 var pos = document.getElementById("TextoPos").value;
+var pos2 = document.getElementById("TextoPos2").value;
 
-ctx.fillText(texto, cx, pos);
+ctx.fillText(texto, pos2, pos);
 
 
 
