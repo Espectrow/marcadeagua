@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<center>
+	<div id="container">
+    
+    	<div id="OriginalContainer">
+        	<p>Imagen a la que quiere aplicar la marca de agua</p>
+    		<input id="upload-original" type="file" accept="image/*" />
+			<div id="imgoriginal"></div>
+        </div>
+    	
+        <div id="LogoContainer">
+        	<p>Configuracion de la marca de agua</p>
+        	<p>Texto: <input type="text" id="TextoMarca"></p>
+        	<p>Color: <input type="color" id="TextoColor"></p>
+        	<p>Transparencia: <input type="range" id="TextoTransparencia"></p>
+            <p>Pos: <input type="range" min="30" max="0" step="any" id="TextoPos"></p>
+            <div id="imglogo"></div>
+        </div>
+    
+    	<div id="aplicar">
+    		<button id="convertir" onClick="verificar()">Aplicar marca de agua</button>
+		</div>
+    
+    	<div id="NuevoContainer">
+       		<div id="error"></div>
+       		<div id="titulo"><p>Resultado</p></div>
+            <canvas id="canvas">
+			<img id="laImagen" src=""/>
+			</canvas>
+		</div>
+    </div>
+
+
+
+
+
+
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>

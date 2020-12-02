@@ -1,0 +1,23 @@
+body{
+	background-color:#000000;
+	color:#ffffff;
+}
+
+#canvas{
+	max-width: 250px;
+}
+.img{
+	max-width: 250px;
+}
+#container{
+	border:solid 1px #000;
+	min-width: 350px;
+	max-width: 600px;
+    padding: 10px;	
+}
+#OriginalContainer, #LogoContainer, #NuevoContainer{
+	margin-bottom: 10px;
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
