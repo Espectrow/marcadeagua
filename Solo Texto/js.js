@@ -33,7 +33,7 @@ ctx.fillStyle = "rgba("+hexToRgb(color).r+","+hexToRgb(color).g+","+hexToRgb(col
 ctx.drawImage(laImagen, 0, 0);
 // el texto para la marca de agua
 var texto = document.getElementById("TextoMarca").value;
-var tamanoTexto = 60; // empieza con algo grande, más grande de lo que sea necesario
+var tamanoTexto = 600; // empieza con algo grande, más grande de lo que sea necesario
 
 ctx.font = tamanoTexto + "px Arial";
 // mide la anchura del texto
