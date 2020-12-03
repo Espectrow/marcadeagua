@@ -121,6 +121,6 @@ function guardar() {
 		//var link = document.createElement('a')
 		var link = document.getElementById("save")
 		link.download = "imgmarcadeagua.png";
-		link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+		link.href = canvas.toDataURL("image/png");
 		//link.click();
 }
