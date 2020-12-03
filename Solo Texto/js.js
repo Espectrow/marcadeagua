@@ -2,7 +2,9 @@ function verificar(){
 	var check = document.getElementById("upload-original").value
 	if(check){
 		convertir();
-		document.getElementById("guardar").innerHTML = '<button id="guardar" onClick="guardar()">Guardar imagen</button>'
+		
+		
+		document.getElementById("imgguardar").innerHTML = '<img class="img" src="'+canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")+'"/>'
 	}
 }
 function convertir(){
@@ -118,11 +120,8 @@ function readFileLogo(input) {
 	
 	
 function guardar() {  
-	var imagengenerada = document.getElementById("laImagen").src
-	if(imagengenerada!="(unknown)"){
-		var link = document.createElement('a')
+		/*var link = document.createElement('a')
 		link.download = "imgmarcadeagua.png";
 		link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-		link.click();
-	}
+		link.click();*/
 }
