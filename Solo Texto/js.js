@@ -118,9 +118,8 @@ function readFileLogo(input) {
 	
 	
 function guardar() {  
-		//var link = document.createElement('a')
-		var link = document.getElementById("save")
+		var link = document.createElement('a')
 		link.download = "imgmarcadeagua.png";
 		link.href = canvas.toDataURL("image/png");
-		//link.click();
+		link.click();
 }
